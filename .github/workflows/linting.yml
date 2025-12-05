@@ -1,12 +1,15 @@
 name: Linting and Types
 
+env:
+  VP_TOKEN: ${{ secrets.VP_TOKEN }}
+
 on:
   pull_request:
-    branches:
-      - develop
-    paths:
-      - 'apps/**'
-      - 'packages/**'
+    # branches:
+    #   - develop
+    # paths:
+    #   - 'apps/**'
+    #   - 'packages/**'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}

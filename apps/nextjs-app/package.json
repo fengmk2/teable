@@ -36,7 +36,7 @@
     "clean": "rimraf ./.next ./out ./coverage ./tsconfig.tsbuildinfo ./node_modules/.cache ./.eslintcache",
     "clean:backend": "rimraf --no-glob ./main",
     "test": "run-s test-unit",
-    "test-unit": "vitest run --silent",
+    "test-unit": "vite test run --silent",
     "test-unit-cover": "pnpm test-unit --coverage",
     "typecheck": "tsc --project ./tsconfig.json --noEmit",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx,.cjs,.mjs,.mdx --cache --cache-location ../../.cache/eslint/nextjs-app.eslintcache",
@@ -88,7 +88,8 @@
     "typescript": "5.4.3",
     "vite-plugin-svgr": "4.2.0",
     "vite-tsconfig-paths": "4.3.2",
-    "vitest": "2.1.5"
+    "vitest": "catalog:",
+    "@voidzero-dev/vite-plus": "catalog:"
   },
   "dependencies": {
     "@antv/g6": "4.8.24",

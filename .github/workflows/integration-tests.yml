@@ -1,14 +1,17 @@
 name: Integration Tests
 
+env:
+  VP_TOKEN: ${{ secrets.VP_TOKEN }}
+
 on:
   push:
     branches:
       - develop
   pull_request:
-    branches:
-      - develop
-    paths:
-      - 'apps/nestjs-backend/**'
+    # branches:
+    #   - develop
+    # paths:
+    #   - 'apps/nestjs-backend/**'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}

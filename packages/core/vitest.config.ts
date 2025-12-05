@@ -1,5 +1,5 @@
 import tsconfigPaths from 'vite-tsconfig-paths';
-import { defineConfig, configDefaults } from 'vitest/config';
+import { defineConfig, configDefaults } from '@voidzero-dev/vite-plus';
 
 const testFiles = ['./src/**/*.{test,spec}.{js,ts}'];
 
