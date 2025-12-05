@@ -2,11 +2,11 @@ name: Linting and Types
 
 on:
   pull_request:
-    branches:
-      - develop
-    paths:
-      - 'apps/**'
-      - 'packages/**'
+    # branches:
+    #   - develop
+    # paths:
+    #   - 'apps/**'
+    #   - 'packages/**'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
