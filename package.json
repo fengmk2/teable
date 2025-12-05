@@ -79,8 +79,27 @@
   },
   "engines": {
     "node": ">=20.0.0",
-    "pnpm": ">=9.13.0",
+    "pnpm": ">=10.0.0",
     "npm": "please-use-pnpm"
   },
-  "packageManager": "pnpm@9.13.0"
+  "packageManager": "pnpm@10.24.0",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@nestjs/core",
+      "@prisma/client",
+      "@prisma/engines",
+      "@sentry/cli",
+      "@sentry-internal/node-cpu-profiler",
+      "@swc/core",
+      "bcrypt",
+      "core-js",
+      "esbuild",
+      "fsevents",
+      "msgpackr-extract",
+      "prisma",
+      "protobufjs",
+      "sharp",
+      "sqlite3"
+    ]
+  }
 }
