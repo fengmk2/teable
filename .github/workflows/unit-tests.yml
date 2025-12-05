@@ -5,13 +5,13 @@ on:
     branches:
       - develop
   pull_request:
-    branches:
-      - develop
-    paths:
-      - 'apps/nextjs-app/**'
-      - 'packages/core/**'
-      - 'packages/sdk/**'
-      - 'packages/openapi/**'
+    # branches:
+    #   - develop
+    # paths:
+    #   - 'apps/nextjs-app/**'
+    #   - 'packages/core/**'
+    #   - 'packages/sdk/**'
+    #   - 'packages/openapi/**'
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
