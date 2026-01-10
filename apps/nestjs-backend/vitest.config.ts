@@ -1,6 +1,6 @@
 import swc from 'unplugin-swc';
 import tsconfigPaths from 'vite-tsconfig-paths';
-import { configDefaults, defineConfig } from 'vitest/config';
+import { configDefaults, defineConfig } from '@voidzero-dev/vite-plus';
 
 const testFiles = ['**/src/**/*.{test,spec}.{js,ts}'];
 

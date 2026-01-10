@@ -23,7 +23,7 @@
     "dev": "tsc --watch",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx,.cjs,.mjs --cache --cache-location ../../.cache/eslint/openapi.eslintcache",
     "test": "run test-unit",
-    "test-unit": "vitest run --silent",
+    "test-unit": "vite test run --silent",
     "test-unit-cover": "pnpm test-unit --coverage",
     "typecheck": "tsc --project ./tsconfig.json --noEmit"
   },
@@ -45,6 +45,7 @@
     "rimraf": "5.0.5",
     "typescript": "5.4.3",
     "vite-tsconfig-paths": "4.3.2",
-    "vitest": "2.1.5"
+    "vitest": "catalog:",
+    "@voidzero-dev/vite-plus": "catalog:"
   }
 }

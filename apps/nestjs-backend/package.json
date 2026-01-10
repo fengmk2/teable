@@ -40,11 +40,11 @@
     "start-debug": "nest start --webpackPath ./webpack.dev.js --debug -w",
     "check-size": "size-limit --highlight-less",
     "test": "run-s test-unit test-e2e",
-    "test-unit:watch": "vitest --watch",
-    "test-unit": "vitest run --silent --bail 1",
+    "test-unit:watch": "vite test --watch",
+    "test-unit": "vite test run --silent --bail 1",
     "test-unit-cover": "pnpm test-unit --coverage ${VITEST_SHARD:+--shard=$VITEST_SHARD}",
     "pre-test-e2e": "cross-env NODE_ENV=test pnpm -F @teable/db-main-prisma prisma-db-seed -- --e2e",
-    "test-e2e": "pnpm pre-test-e2e && vitest run --config ./vitest-e2e.config.ts --silent",
+    "test-e2e": "pnpm pre-test-e2e && vite test run --config ./vitest-e2e.config.ts --silent",
     "test-e2e-cover": "pnpm test-e2e --coverage --bail 1 ${VITEST_SHARD:+--shard=$VITEST_SHARD}",
     "typecheck": "tsc --project ./tsconfig.json --noEmit",
     "lint": "eslint . --ext .ts,.js,.cjs,.mjs,.mdx --cache --cache-location ../../.cache/eslint/nestjs-backend.eslintcache",
@@ -113,9 +113,10 @@
     "typescript": "5.4.3",
     "unplugin-swc": "1.4.4",
     "vite-tsconfig-paths": "4.3.2",
-    "vitest": "2.1.5",
+    "vitest": "catalog:",
     "vitest-mock-extended": "2.0.2",
-    "webpack": "5.91.0"
+    "webpack": "5.91.0",
+    "@voidzero-dev/vite-plus": "catalog:"
   },
   "dependencies": {
     "@ai-sdk/amazon-bedrock": "4.0.0-beta.97",

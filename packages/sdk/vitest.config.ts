@@ -1,7 +1,7 @@
 import react from '@vitejs/plugin-react-swc';
 import svgr from 'vite-plugin-svgr';
 import tsconfigPaths from 'vite-tsconfig-paths';
-import { configDefaults, defineConfig } from 'vitest/config';
+import { configDefaults, defineConfig } from '@voidzero-dev/vite-plus';
 
 const testFiles = ['./src/**/*.{test,spec}.{js,jsx,ts,tsx}'];
 export default defineConfig({
